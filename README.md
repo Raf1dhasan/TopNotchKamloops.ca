@@ -47,5 +47,10 @@ The website was created to:
 - Adding a blog or news section for client updates.
 - Further optimization for accessibility (ARIA roles and WCAG standards).
 
+## Screenshots
+path/to/screenshot.jpg
+
+## YouTube demo 
+
 ## Contact
 If you'd like to learn more about this project or discuss opportunities, feel free to reach out at **rafidhasan202@gmail.com**
