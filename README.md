@@ -48,7 +48,7 @@ The website was created to:
 - Further optimization for accessibility (ARIA roles and WCAG standards).
 
 ## Screenshots
-top-notch-ss-1.png
+![Screenshot of Website](top-notch-ss-1.png)
 
 ## YouTube demo 
 
