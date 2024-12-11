@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Maintenance | Top-Notch Property Solution & Cleaning</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header class="text-center py-3">
+        <div class="container">
+            <p class="mb-0">Phone: 236-565-6348 | Email: inquiry@topnotchkamloops.ca</p>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-light" href="index.html#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="index.html#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="index.html#testimonials">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Introductory Section -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="text-primary">Property Maintenance & Small Renovations</h2>
+            <p class="text-muted mt-3">
+                Keeping a property well-maintained requires time and effort. At Top Notch, we offer a suite of property maintenance and small renovation services designed to keep your property in prime condition year-round. From regular upkeep to special projects, our experienced team handles it all—so you don’t have to.
+            </p>
+            <!-- Contact Us Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-primary contact-btn">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image and Description Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Images on the Left -->
+                <div class="col-md-6">
+                    <img src="landscp1.jpg" alt="Property Maintenance" class="img-fluid rounded mb-4" style="max-width: 100%; height: auto;">
+                    <img src="landscp2.jpg" alt="Small Renovations" class="img-fluid rounded mb-4" style="max-width: 100%; height: auto;">
+                    <img src="landscp3.jpg" alt="Small Renovations" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                </div>
+                <!-- Description on the Right -->
+                <div class="col-md-6">
+                    <h3 class="text-primary">Our Property Maintenance Services<br><br><br></h3>
+                    <div class="mb-4">
+                        <h4 class="text-dark">Landscaping & Yard Maintenance</h4>
+                        <p class="text-muted">
+                            Your property’s exterior is the first impression visitors get, and we help make it a great one. Our landscaping and yard maintenance services include:
+                        </p>
+                        <ul class="text-muted">
+                            <li>Routine lawn care such as mowing, trimming, and fertilizing</li>
+                            <li>Seasonal planting, mulching, and landscape design to enhance curb appeal</li>
+                            <li>Leaf cleanup in the fall and snow removal during winter months for a well-kept look throughout the year</li>
+                            <li>Customizable plans based on your property’s specific needs and climate</li>
+                        </ul>
+                        <p class="text-muted">
+                            Whether you need weekly upkeep or seasonal overhauls, our team ensures your outdoor spaces remain vibrant and inviting.
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-dark">Minor Property Renovations</h4>
+                        <p class="text-muted">
+                            Small repairs and updates can make a big difference in the value and appeal of your property. Our minor renovation services cover:
+                        </p>
+                        <ul class="text-muted">
+                            <li>Painting and wall patching to refresh or update interior and exterior spaces</li>
+                            <li>Repairing minor damage, including drywall, floorboards, and door or window frames</li>
+                            <li>Upgrading fixtures, hardware, or lighting to modernize and improve functionality</li>
+                            <li>Customizable renovation projects tailored to meet your specific property goals</li>
+                        </ul>
+                        <p class="text-muted">
+                            Ideal for homeowners looking to maintain or enhance their property’s appeal, our renovation services are handled efficiently and affordably, adding both value and style.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <p style="font-size: 24px; font-weight: bold;">Phone: 236-565-6348</p>
+            <a href="https://www.facebook.com/profile.php?id=61568631102613" target="_blank">Facebook Page</a><br>
+            <a href="mailto:inquiry@topnotchkamloops.ca" target="_blank">Email Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center">
+        <p class="text-muted mb-0">Top-Notch Property Solution & Cleaning | Kamloops, BC</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Modal functionality for the Contact Us button
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactModal = document.getElementById('contactModal');
+            const contactBtn = document.querySelector('.contact-btn');
+            const closeBtn = document.querySelector('.close-btn');
+
+            contactBtn.addEventListener('click', function () {
+                contactModal.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', function () {
+                contactModal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function (event) {
+                if (event.target === contactModal) {
+                    contactModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: 500;
+    color: #f8f9fa;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img99.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2.75em;
+    color: #fff;
+}
+
+.banner p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Contact Us Button */
+.contact-btn {
+    font-size: 1.25em;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffc107;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Discount Banner Styling */
+.discount-banner {
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    animation: flash 1s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Flashing Animation */
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1em;
+}
+
+/* Make service cards clickable and remove link styling */
+.service-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-link .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Why Choose Us Section */
+#why-choose-us {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#why-choose-us p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    background-color: #f9f9f9;
+}
+
+.card h5 {
+    font-size: 1.25em;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Star Rating System */
+.star-rating {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+    color: gold;
+}
+
+.star-rating .selected {
+    color: gold;
+}
+
+/* Contact Form */
+form .form-control {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+form .btn-primary {
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Optional: Add spacing around each package description */
+.mb-4 h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mb-4 p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Adjust spacing between stars as needed */
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

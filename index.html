@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Notch Property Solution & Cleaning</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for testimonials */
+        .review {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .review-content {
+            font-size: 1rem;
+            color: #333;
+        }
+        .review-author-left, .review-author-right {
+            display: flex;
+            align-items: center;
+        }
+        .review-author-left {
+            justify-content: flex-start;
+        }
+        .review-author-right {
+            justify-content: flex-end;
+            text-align: right;
+        }
+        .review-author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .review-author-right .review-author-img {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+        .review-rating {
+            color: #f39c12;
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        /* Star Rating System */
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 2rem;
+            color: #ccc;
+        }
+        .star-rating .star:hover,
+        .star-rating .star:hover ~ .star {
+            color: gold;
+        }
+        .star-rating .selected {
+            color: gold;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="text-center py-3">
+        <div class="container">
+            <p class="mb-0">Phone: 236-565-6348 | Email: inquiry@topnotchkamloops.ca</p>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-light" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#testimonials">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner d-flex align-items-center justify-content-center text-center">
+        <div class="banner-content">
+            <h1 class="display-4 text-white">Top-Notch Property Solution & Cleaning</h1>
+            <p class="text-light">Expert ALL-IN-ONE Property Care You Can Rely On</p>
+            <!-- Contact Us Button -->
+            <button class="btn btn-warning mt-3 contact-btn">Contact Us</button>
+            <!-- Discount Banner -->
+            <div class="discount-banner mt-3">
+                30% Discount on All Services!
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4 text-primary">About Us</h2>
+            <p class="text-muted">At Top-Notch Property Service & Cleaning, we believe that exceptional service goes beyond just doing a job—it’s about building long-term relationships with our clients. Founded on the values of quality, trust, and professionalism, we focus on delivering results that exceed expectations...</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <a href="residential-cleaning.html" class="service-link">
+                        <div class="card shadow-sm border-light text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Residential Cleaning</h5>
+                                <p class="card-text text-muted">Standard, Deep, and Move-In/Out Cleaning Packages.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="airbnb-management.html" class="service-link">
+                        <div class="card shadow-sm border-light text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Airbnb Management & Setup</h5>
+                                <p class="card-text text-muted">Complete management and setup for Airbnb hosts.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="property-maintenance.html" class="service-link">
+                        <div class="card shadow-sm border-light text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Property Maintenance & Small Renovations</h5>
+                                <p class="card-text text-muted">Yard maintenance, small repairs, and more.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="trusted-contractor-network.html" class="service-link">
+                        <div class="card shadow-sm border-light text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Trusted Contractor Network</h5>
+                                <p class="card-text text-muted">Access a reliable network of skilled and vetted contractors for any property need.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Star Rating -->
+<section id="testimonials" class="py-5 text-center bg-light">
+    <div class="container">
+        <h2 class="mb-4 text-primary">Client Reviews</h2>
+        
+        <!-- Star Rating Selection -->
+        <div class="star-rating mb-3">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <p id="review-feedback" class="text-muted">Click on a star to rate us!</p>
+        
+        <!-- First Review - Author on Right -->
+        <div class="row review">
+            <div class="col-md-10">
+                <p class="review-content">"Rashid and the team have been incredible in managing my three investment properties. They handle everything smoothly, from tenant placement to maintenance, and I never have to worry. Excellent service all around!"</p>
+            </div>
+            <div class="col-md-2 review-author-right">
+                <div>
+                    <p class="mb-0"><strong>Raghav Bhargava</strong></p>
+                    <div class="review-rating" style="display: flex;">
+                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </div>
+                </div>
+                <img src="rImg.png" alt="Reviewer Image" class="review-author-img">
+            </div>
+        </div>
+
+        <!-- Second Review - Author on Left -->
+        <div class="row review">
+            <div class="col-md-2 review-author-left">
+                <img src="kj.jpg" alt="Reviewer Image" class="review-author-img">
+                <div>
+                    <p class="mb-0"><strong>Kyle Johnson</strong></p>
+                    <div class="review-rating" style="display: flex;">
+                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <p class="review-content">"Top-Notch Property Service set up my Airbnb and handled everything from the SOPs to listing it on the market. Rashid’s attention to detail was spot on, and the whole process was seamless. Great experience!"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Why Choose Us Section -->
+     <section id="why-choose-us" class="py-5 text-center">
+        <div class="container">
+            <h2 class="text-primary">Why Choose Top-Notch Property Solution & Cleaning?</h2>
+            <p class="text-muted mt-3"><strong>Experienced & Professional Team:</strong> Our fully trained and insured staff deliver quality results with attention to detail.</p>
+            <p class="text-muted"><strong>Personalized Services:</strong> We tailor our offerings to meet your specific needs, whether it’s cleaning or maintenance.</p>
+            <p class="text-muted"><strong>Transparent Pricing:</strong> No hidden fees or surprises—just honest, competitive pricing.</p>
+            <p class="text-muted"><strong>Relationship Over Profit:</strong> We believe in building trust with our clients through exceptional service and long-term relationships.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-5 text-center">
+    <div class="container">
+        <h2 class="text-primary">Get in Touch</h2>
+        <form action="send_email.php" method="POST" class="mt-4">
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <p style="font-size: 24px; font-weight: bold;">Phone: 236-565-6348</p>
+            <a href="https://www.facebook.com/profile.php?id=61568631102613" target="_blank">Facebook Page</a><br>
+            <a href="mailto:inquiry@topnotchkamloops.ca" target="_blank">Email Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center">
+        <p class="text-muted mb-0">Top-Notch Property Solution & Cleaning | Kamloops, BC</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('.star-rating .star');
+            const feedback = document.getElementById('review-feedback');
+            stars.forEach(star => {
+                star.addEventListener('click', function () {
+                    clearStars();
+                    this.classList.add('selected');
+                    let previous = this.previousElementSibling;
+                    while (previous) {
+                        previous.classList.add('selected');
+                        previous = previous.previousElementSibling;
+                    }
+                    const rating = this.getAttribute('data-rating');
+                    feedback.innerText = `Thank you! You rated us ${rating} star${rating > 1 ? 's' : ''}.`;
+                });
+            });
+            function clearStars() {
+                stars.forEach(star => {
+                    star.classList.remove('selected');
+                });
+            }
+
+            const contactModal = document.getElementById('contactModal');
+            const contactBtn = document.querySelector('.contact-btn');
+            const closeBtn = document.querySelector('.close-btn');
+            contactBtn.addEventListener('click', function () {
+                contactModal.style.display = 'block';
+            });
+            closeBtn.addEventListener('click', function () {
+                contactModal.style.display = 'none';
+            });
+            window.addEventListener('click', function (event) {
+                if (event.target === contactModal) {
+                    contactModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
