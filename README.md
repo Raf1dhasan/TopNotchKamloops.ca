@@ -48,4 +48,4 @@ The website was created to:
 - Further optimization for accessibility (ARIA roles and WCAG standards).
 
 ## Contact
-If you'd like to learn more about this project or discuss opportunities, feel free to reach out at **rafidhasan202@gmail.com**.
+If you'd like to learn more about this project or discuss opportunities, feel free to reach out at **rafidhasan202@gmail.com**
