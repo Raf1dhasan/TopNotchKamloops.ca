@@ -49,6 +49,7 @@ The website was created to:
 
 ## Screenshots
 ![Screenshot of Website](top-notch-ss-1.png)
+![Screenshot of Website](top-notch-ss-2.png)
 
 ## YouTube demo 
 
